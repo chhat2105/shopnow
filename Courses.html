@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            margin-top: 1%;
+            margin-right: 10%;
+            margin-left: 10%;
+
+        }
+        .class1, .class2 {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            flex-wrap: wrap; 
+        }
+        .class1 .pic1 img, .class2 .pic2 img {
+            width: 250px;
+            height: 230px;
+            transition: transform 0.5s ease;
+        }
+        .class1 .pic1 img:hover, .class2 .pic2 img:hover {
+            transform: scale(1.1);
+        }
+        .class1 .text1, .class2 .text2 {
+            flex: 1;
+            margin: 10px 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+        .class2 {
+            flex-direction: row-reverse;
+        }
+        .class2 .text2 {
+            margin-left: 0;
+        }
+        .class1 .button1, .class2 .button2 {
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .class1 .button1 button, .class2 .button2 button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .class1 .button1 button:hover, .class2 .button2 button:hover {
+            background-color: darkgreen;
+            color: white;
+        }
+        .button1 button a, .button2 button a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="class1">
+        <div class="pic1">
+            <img src="course1.jpg" alt="Course 1">
+        </div>
+        <div class="text1">
+            <h3>Beauty at home</h3>
+            <h5>A 6-week online course</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+        </div>
+        <div class="button1">
+            <button><a href="readmore_course.html">Read More</a></button>
+        </div>
+    </div>
+    <div class="class2">
+        <div class="pic2">
+            <img src="course2.jpg" alt="Course 2">
+        </div>
+        <div class="text2">
+            <h3>Advanced Beauty Techniques</h3>
+            <h5>An 4-week online course</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="button2">
+            <button><a href="courses_2.html">Read More</a></button>
+        </div>
+    </div>
+</body>
+</html>

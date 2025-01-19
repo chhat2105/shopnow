@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        
+        body {
+            margin-top: 1;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+            
+        }
+        .container {
+            padding: 20px;
+            background-color: #ddc8c8;
+        }
+        .shop {
+            text-align: center;
+        }
+        .shop h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        p {
+            text-align: justify;
+            font-size: 20px;
+        }
+        hr{
+            size: 20px;
+        }
+        .img .item {
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+        .img .item img {
+            width: 100%;
+            height: auto;
+            animation: scaleAnimation 3s infinite;
+            border: 20px solid #ddc8c8;
+            
+        }
+        .img .item .details {
+            margin-top: 10px;
+        }
+        .details p {
+            font-size: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @keyframes scaleAnimation {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shop">
+            <h2><i>ONLINE SHOP</i></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <hr>
+        <div class="img">
+            <div class="item">
+                <img src="Shop.jpg" alt="">
+                <div class="details">
+                    <p>Oil Soap</p>
+                    <p>$19.99</p>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Shop2.jpg" alt="">
+                <div class="details">
+                    <p>Oganic Soap</p>
+                    <p>$29.99</p>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shop3.jpg" alt="">
+                <div class="details">
+                    <p>Glycerin Soap</p>
+                    <p>$39.99</p>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="shop4.jpg" alt="">
+                <div class="details">
+                    <p>Olive oil Soap</p>
+                    <p>$49.99</p>
+                    <button>Add Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
